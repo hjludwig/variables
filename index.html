@@ -5,15 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <title>CSS Variables</title>
 </head>
 
 <body>
     <h1>75th Annual County Cheese Fest</h1>
     <div class="controls">
-        <input type="range" name="" id="">
-        <input type="range" name="" id="">
-        <input type="color" name="" id="">
+        <div class="control">
+            <label for="blur">Blur radius</label>
+            <input type="range" name="blur-radius" data-suffix="px">
+        </div>
+        <div class="control">
+            <label for="heading-color">Heading Color</label>
+            <input type="color" name="heading-color">
+        </div>
+        <div class="control">
+            <label for="background-color">Background Color</label>
+            <input type="color" name="bg-color">
+        </div>
     </div>
     <div class="contents">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur ipsam quam dicta fugiat, delectus nam

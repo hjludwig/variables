@@ -7,6 +7,9 @@
 
 :root {
   font-family: "Source Sans", sans-serif;
+  --bg-color: grey;
+  --heading-color: coral;
+  --blur-radius: 5px;
 }
 
 body {
@@ -24,6 +27,41 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.controls .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.controls .control label {
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: grey;
 }
 
 .contents {
@@ -42,8 +80,18 @@ body {
           align-items: center;
 }
 
+.contents p {
+  margin-right: 2em;
+}
+
 h1 {
   font-size: 6rem;
+  font-family: "Alfa Slab One", cursive;
+  text-align: center;
+  font-weight: normal;
+  max-width: 90%;
+  line-height: 1em;
+  color: var(--heading-color);
 }
 
 p {
@@ -53,5 +101,7 @@ p {
 
 img {
   max-width: 400px;
+  -webkit-filter: blur(var(--blur-radius));
+          filter: blur(var(--blur-radius));
 }
 /*# sourceMappingURL=style.css.map */
